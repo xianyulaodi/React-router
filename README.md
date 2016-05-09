@@ -1,6 +1,6 @@
 使用方法：
 
-npm install
+npm install  安装过程比较慢，需要等待时间比较久，请耐心等待
 
 npm start
 
