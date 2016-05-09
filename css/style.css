@@ -1,0 +1,504 @@
+ /*
+
+ This file is part of the ZippyUI Framework
+
+ Copyright (c) 2011 ZippyUI.com
+
+ All rights reserved to zippyui.com
+ This software cannot be used/copied/distributed without the express permission from staff at zippyui.com
+
+ */
+.date-picker {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+.date-picker,
+.date-picker * {
+  box-sizing: border-box;
+}
+.date-picker .dp-footer {
+  -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.date-picker .dp-body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.date-picker .dp-table {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.date-picker .dp-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.date-picker .dp-cell {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.date-picker .dp-nav-table {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+}
+.date-picker .dp-nav-table .dp-cell {
+  -webkit-box-flex: 7;
+  -webkit-flex: 7;
+      -ms-flex: 7;
+          flex: 7;
+}
+.date-picker .dp-nav-table .dp-nav-cell {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.date-picker {
+  overflow: hidden;
+  background: #fff;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #a8a8a8;
+}
+.date-picker .dp-table {
+  border-color: #a8a8a8;
+}
+.date-picker .dp-table .dp-row {
+  border-top: 1px solid #a8a8a8;
+}
+.date-picker .dp-table .dp-row:last-child {
+  border-bottom: 1px solid #a8a8a8;
+}
+.date-picker .dp-table .dp-cell {
+  cursor: pointer;
+  padding: 5px;
+  background: inherit;
+}
+.date-picker .dp-table .dp-cell:not(:first-child) {
+  border-left: 1px solid #a8a8a8;
+}
+.date-picker .dp-table .dp-cell.dp-prev,
+.date-picker .dp-table .dp-cell.dp-next {
+  color: #5c5c5c;
+  background: inherit;
+}
+.date-picker .dp-table .dp-cell.dp-in-range {
+  background: #e2f0ff;
+}
+.date-picker .dp-table .dp-cell:hover {
+  color: inherit;
+  font-weight: inherit;
+  background: #eee;
+}
+.date-picker .dp-table .dp-cell.dp-disabled {
+  cursor: default;
+  color: #adadad;
+  background: inherit;
+}
+.date-picker .dp-table .dp-cell.dp-value {
+  color: #000;
+  font-weight: bold;
+  background: #eee;
+}
+.date-picker .dp-table .dp-cell.dp-current {
+  color: #2e99eb;
+  background: inherit;
+}
+.date-picker .dp-table .dp-cell.dp-in-range.dp-current,
+.date-picker .dp-table .dp-cell.dp-in-range.dp-value {
+  background: #e2f0ff;
+}
+.date-picker .dp-table .dp-cell.dp-month {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.date-picker .dp-table .dp-cell.dp-week-day-name {
+  font-weight: bold;
+  cursor: default;
+  background: inherit;
+}
+.date-picker .dp-footer {
+  padding: 3px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top-width: 0px;
+}
+.date-picker .dp-footer .dp-footer-selected,
+.date-picker .dp-footer .dp-footer-today {
+  padding: 5px 15px;
+  border-width: 1px;
+  cursor: pointer;
+}
+.date-picker .dp-body {
+  overflow: hidden;
+}
+.date-picker .dp-nav-view,
+.date-picker .dp-nav-cell,
+.date-picker .dp-week-day-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.date-picker .dp-nav-view,
+.date-picker .dp-nav-cell {
+  cursor: pointer;
+}
+.date-picker .dp-nav-cell {
+  background: inherit;
+}
+.date-picker .dp-nav-cell:hover {
+  background: #eee;
+}
+.date-picker .dp-nav-view {
+  background: inherit;
+}
+.date-picker .dp-nav-view:hover {
+  background: #eee;
+}
+.date-picker .dp-nav-table .dp-cell {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  padding: 8px;
+  font-weight: bold;
+}
+.date-picker .dp-decade-view,
+.date-picker .dp-year-view,
+.date-picker .dp-month-view {
+  touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+/*
+
+ This file is part of the ZippyUI Framework
+
+ Copyright (c) 2011 ZippyUI.com
+
+ All rights reserved to zippyui.com
+ This software cannot be used/copied/distributed without the express permission from staff at zippyui.com
+
+ */
+.date-picker {
+  overflow: hidden;
+  background: #fff;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #aeaeae;
+  border-radius: 4px;
+}
+.date-picker .dp-header {
+  background: #f0f0f0;
+}
+.date-picker .dp-header .dp-cell {
+  color: #000;
+}
+.date-picker .dp-header .dp-cell:hover {
+  background: inherit;
+}
+.date-picker .dp-table {
+  border-color: #aeaeae;
+}
+.date-picker .dp-table .dp-row {
+  border-top: 0 solid transparent;
+}
+.date-picker .dp-table .dp-row.dp-week-day-names {
+  background: #f0f0f0;
+  border-bottom: 1px solid #aeaeae;
+  border-top: none;
+  color: #000;
+}
+.date-picker .dp-table .dp-cell {
+  cursor: pointer;
+  padding: 0;
+  background: inherit;
+  border-radius: 4px;
+  margin: 2px;
+}
+.date-picker .dp-table .dp-cell:not(:first-child) {
+  border-left: 0 solid transparent;
+}
+.date-picker .dp-table .dp-cell.dp-prev,
+.date-picker .dp-table .dp-cell.dp-next {
+  color: #5c5c5c;
+  background: inherit;
+}
+.date-picker .dp-table .dp-cell.dp-in-range {
+  background: #e2f0ff;
+}
+.date-picker .dp-table .dp-cell:hover {
+  color: inherit;
+  font-weight: inherit;
+  background: #f0f0f0;
+}
+.date-picker .dp-table .dp-cell.dp-disabled {
+  cursor: default;
+  color: #aeaeae;
+  background: inherit;
+}
+.date-picker .dp-table .dp-cell.dp-value {
+  color: #fff;
+  font-weight: normal;
+  background: #2e99eb;
+}
+.date-picker .dp-table .dp-cell.dp-current {
+  font-weight: bold;
+}
+.date-picker .dp-table .dp-cell.dp-in-range.dp-current,
+.date-picker .dp-table .dp-cell.dp-in-range.dp-value {
+  background: #e2f0ff;
+}
+.date-picker .dp-table .dp-cell.dp-month {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.date-picker .dp-table .dp-cell.dp-week-day-name {
+  cursor: default;
+  background: inherit;
+  border: none;
+}
+.date-picker .dp-footer {
+  padding: 3px;
+  justify-content: center;
+  border-top: 1px solid #aeaeae;
+}
+.date-picker .dp-footer .dp-footer-selected,
+.date-picker .dp-footer .dp-footer-today {
+  padding: 5px 15px;
+  border-width: 1px;
+  cursor: pointer;
+}
+.date-picker .dp-body {
+  overflow: hidden;
+}
+.date-picker .dp-cell {
+  outline: none;
+}
+.date-picker .dp-nav-view,
+.date-picker .dp-nav-cell,
+.date-picker .dp-week-day-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  touch-callout: none;
+  user-select: none;
+}
+.date-picker .dp-nav-view,
+.date-picker .dp-nav-cell {
+  cursor: pointer;
+}
+.date-picker .dp-nav-table .dp-nav-cell.dp-cell {
+  border: 10px solid transparent;
+  padding: 0;
+  margin-top: 5px;
+  width: 0;
+  height: 0;
+}
+.date-picker .dp-nav-table .dp-nav-cell.dp-cell.dp-prev-nav {
+  border-right-color: #aeaeae;
+}
+.date-picker .dp-nav-table .dp-nav-cell.dp-cell.dp-prev-nav:hover {
+  border-right-color: #9d9d9d;
+}
+.date-picker .dp-nav-table .dp-nav-cell.dp-cell.dp-next-nav {
+  border-left-color: #aeaeae;
+}
+.date-picker .dp-nav-table .dp-nav-cell.dp-cell.dp-next-nav:hover {
+  border-left-color: #9d9d9d;
+}
+.date-picker .dp-nav-view {
+  background: inherit;
+}
+.date-picker .dp-nav-view:hover {
+  background: #f0f0f0;
+}
+.date-picker .dp-nav-table .dp-cell {
+  padding: 8px;
+  font-weight: bold;
+}
+.date-picker .dp-nav-table .dp-nav-cell {
+  flex: 0;
+  touch-callout: none;
+  user-select: none;
+}
+.date-picker .dp-decade-view,
+.date-picker .dp-year-view,
+.date-picker .dp-month-view {
+  touch-callout: none;
+  user-select: none;
+}
+/*timePicker*/
+.timePicker span{
+	 
+}
+ .mp_page_footer [class*='bui_avg_sm_5'], .mp_page_footer [class*='bui_avg_sm_5'] > * {
+    display: block;
+    overflow: initial;
+    } 
+.mp_wrap {
+	overflow: hidden;
+	position: relative;
+	height: 100%;
+	width: auto;
+} 
+
+.mp_page_header {
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	height: 48px;
+	line-height: 48px;
+	top: 0;
+	left: 0;
+}
+.mp_page_footer {
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	height: 64px;
+	bottom: 0;
+	left: 0;
+}
+.mp_page_body {
+	position: absolute;
+	-webkit-overflow-scrolling: touch; /* ios5+ */
+	overflow:auto;
+	z-index: 0;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	height: 100
+ 
+}
+.mp_page_body.hasheader {
+	top: 48px;
+}
+.mp_page_body.hasfooter {
+	bottom: 48px;
+}
+.bui_bgc_lgreen{
+	background: rgba(38,200,188,1);
+}
+.fade{
+  animation:myFade 0.7s  ;
+  -moz-animation:myFade 0.7s   ; /* Firefox */
+  -webkit-animation:myFade 0.7s   ; /* Safari and Chrome */
+  -o-animation:myFade 0.7s  ; /* Opera */ 
+}
+@-webkit-keyframes myFade /* Safari 和 Chrome */
+{
+  0%{opacity: 0; }
+  /*1%{opacity: 0;display: block;}*/
+  100%{opacity: 1; }
+}
+@-ms-keyframes myFade{
+  0%{opacity: 0}
+  /*1%{opacity: 0;display: block;}*/
+  100%{opacity: 1}
+}
+@keyframes myFade{
+   0%{opacity: 0}
+   /*1%{opacity: 0;display: block;}*/
+  100%{opacity: 1}
+}
+.fade_out{
+  animation:fadeOut 0.7s  ;
+  -moz-animation:fadeOut 0.7s   ; /* Firefox */
+  -webkit-animation:fadeOut 0.7s   ; /* Safari and Chrome */
+  -o-animation:fadeOut 0.7s  ; /* Opera */ 
+}
+@-webkit-keyframes fadeOut /* Safari 和 Chrome */
+{
+  0%{opacity: 1; }
+  /*1%{opacity: 0;display: block;}*/
+  100%{opacity: 0;display: none }
+}
+@-ms-keyframes fadeOut{
+  0%{opacity: 1}
+  /*1%{opacity: 0;display: block;}*/
+  100%{opacity: 0;display: none }
+}
+@keyframes fadeOut{
+   0%{opacity: 1}
+   /*1%{opacity: 0;display: block;}*/
+  100%{opacity: 0;display: none }
+}

@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+/*日期插件*/
+
+.datemask {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, 0.64);
+}
+.datemask.Open {
+	display: block;
+}
+.datetimepicker {
+	display: block;
+	position: fixed;
+	background: #fff;
+	box-shadow: 0 0 12px rgba(0, 0, 0, 0.24);
+	padding: 24px;
+	text-align: center;
+}
+.datetimepicker {
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+.datetimepicker.datetimepicker-dropdown-w-top {
+	width: 100%;
+	left: 0;
+	top: 0;
+	transform: translateY(-100%);
+	-moz-transform: translateY(-100%);
+	-ms-transform: translateY(-100%);
+	-o-transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	opacity: 0;
+}
+.datetimepicker.datetimepicker-dropdown-w-bottom {
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	transform: translateY(100%);
+	-moz-transform: translateY(100%);
+	-ms-transform: translateY(100%);
+	-o-transform: translateY(100%);
+	-webkit-transform: translateY(100%);
+	opacity: 0;
+}
+.datetimepicker.Open {
+	transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	-webkit-transform: translateY(0);
+	opacity: 1;
+}
+.table-condensed thead .switch {
+	font-size: 20px;
+}
+.table-condensed thead .prev,
+.table-condensed thead .next {
+	font-size: 16px;
+}
+.table-condensed .dow,
+.table-condensed .day {
+	font-size: 16px;
+	padding: 4px 0;
+}
+.table-condensed .year,
+.table-condensed .month {
+	width: 33.333%;
+	float: left;
+	padding: 12px 0;
+}
+.table-condensed .hour,
+.table-condensed .minute {
+	width: 25%;
+	float: left;
+	padding: 12px 0;
+}
+.table-condensed .old,
+.table-condensed .new {
+	color: #ccc;
+}
+.table-condensed .active {
+	background: #ec5464;
+	color: #fff;
+}
+.datetimepicker .prev,
+.datetimepicker .next,
+.datetimepicker .switch,
+.datetimepicker .year,
+.datetimepicker .month,
+.datetimepicker .dow,
+.datetimepicker .day {
+	cursor: pointer;
+	border-radius: 12px;
+}
+.datetimepicker .prev.Hit,
+.datetimepicker .next.Hit,
+.datetimepicker .switch.Hit,
+.datetimepicker .year.Hit,
+.datetimepicker .month.Hit,
+.datetimepicker .dow.Hit,
+.datetimepicker .day.Hit {
+	background: #333;
+	color: #fff;
+}
+.datetimepicker .prev:hover,
+.datetimepicker .next:hover,
+.datetimepicker .switch:hover,
+.datetimepicker .year:hover,
+.datetimepicker .month:hover,
+.datetimepicker .dow:hover,
+.datetimepicker .day:hover {
+	background: #ccc;
+	color: #fff;
+}

@@ -1,0 +1,71 @@
+{
+  "name": "react-hot-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "boilerplate",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "edit",
+    "webpack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "devDependencies": {
+    "babel-core": "^6.0.20",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^6.0.1",
+    "babel-preset-es2015": "^6.0.15",
+    "babel-preset-react": "^6.0.15",
+    "babel-preset-stage-0": "^6.0.15",
+    "eslint-plugin-react": "^3.6.2",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "style-loader": "^0.13.0",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.9.0",
+    "css-loader": "^0.23.0",
+    "sass-loader": "3.1.1",
+    "less": "^2.6.0",
+    "less-loader": "^2.2.2",
+    "url-loader": "^0.5.6",
+    "scss-loader": "^0.0.1"
+  },
+  "dependencies": {
+    "css-loader": "^0.23.0",
+    "jquery": "^2.1.4",
+    "underscore":"^1.8.3",
+    "react-addons-css-transition-group": "^0.14.0",
+    "moment": "^2.10.6",
+    "history": "^1.12.5",
+    "react-router":"^1.0.0",
+    "react": "^0.14.0",
+    "react-date-picker": "^3.1.8",
+    "react-dom": "^0.14.0",
+    "react-swipe": "^3.0.0",
+    "react-tappable": "^0.7.1",
+    "react-time-picker": "^1.1.0",
+    "sass-loader": "^3.1.2",
+    "signals": "^1.0.0",
+    "swipe-js-iso": "^2.0.1"
+  }
+}

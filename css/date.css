@@ -1,0 +1,35 @@
+table {
+	border-collapse: separate;
+	border-width: 0px 0px 1px 1px;
+	margin: 10px auto;
+	font-size: 20px;
+}
+td, th {
+	width: 81px;
+	height: 45px;
+	text-align: center;
+	vertical-align: middle;
+	color: #5d6b7a;
+	position: relative;
+	font-size: 16px;
+}
+
+.thead th{
+	background-color: #ffa6a6;
+	color: white;
+	height: 50px;
+	font-weight: bold;
+	font-size: 14px;
+}
+/*匹配所有表格的奇数行*/
+tbody tr:nth-child(2n+1){
+	background: #fff;
+}
+
+/*匹配所有的偶数行*/
+tbody tr:nth-child(2n){
+	
+	background:#f5f8fc;
+	
+}
+

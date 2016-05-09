@@ -1,0 +1,20 @@
+.icon{
+    height: 72px;
+    width: 72px;
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.icon1{
+    background-image: url(../images/bg_03.png);
+}
+.icon2{
+    background-image: url(../images/mb_03.png);
+}
+.icon3{
+    background-image: url(../images/cd_03.png);
+}
+.icon4{
+    background-image: url(../images/dg_03.png);
+}

@@ -1,0 +1,371 @@
+@charset "utf-8";
+/* CSS Document */
+/*响应式*/
+.bui_body_lg .bui_auto_w {
+	width: 1180px;
+	padding: 0;
+}
+.bui_body_md .bui_auto_w {
+	width: 980px;
+	padding: 0;
+}
+.bui_body_sm .bui_auto_w {
+	width: auto;
+	min-width: 320px;
+	display: block;
+	padding: 0 12px;
+}
+/*栅格布局*/
+
+.bui_col_lg_1,
+.bui_col_lg_2,
+.bui_col_lg_2_4,
+.bui_col_lg_3,
+.bui_col_lg_4,
+.bui_col_lg_5,
+.bui_col_lg_6,
+.bui_col_lg_7,
+.bui_col_lg_8,
+.bui_col_lg_9,
+.bui_col_lg_10,
+.bui_col_lg_11,
+.bui_col_lg_12,
+.bui_col_md_1,
+.bui_col_md_2,
+.bui_col_md_2_4,
+.bui_col_md_3,
+.bui_col_md_4,
+.bui_col_md_5,
+.bui_col_md_6,
+.bui_col_md_7,
+.bui_col_md_8,
+.bui_col_md_9,
+.bui_col_md_10,
+.bui_col_md_11,
+.bui_col_md_12,
+.bui_col_sm_1,
+.bui_col_sm_2,
+.bui_col_sm_2_4,
+.bui_col_sm_3,
+.bui_col_sm_4,
+.bui_col_sm_5,
+.bui_col_sm_6,
+.bui_col_sm_7,
+.bui_col_sm_8,
+.bui_col_sm_9,
+.bui_col_sm_10,
+.bui_col_sm_11,
+.bui_col_sm_12 {
+	width: 100%;
+	float: left;
+}
+.bui_col_sm_1 {
+	width: 8.33333%;
+}
+.bui_col_sm_2 {
+	width: 16.6667%;
+}
+.bui_col_sm_2_4 {
+	width: 20%;
+}
+.bui_col_sm_3 {
+	width: 25%;
+}
+.bui_col_sm_4 {
+	width: 33.3333%;
+}
+.bui_col_sm_5 {
+	width: 41.6667%;
+}
+.bui_col_sm_6 {
+	width: 50%;
+}
+.bui_col_sm_7 {
+	width: 58.3333%;
+}
+.bui_col_sm_8 {
+	width: 66.6667%;
+}
+.bui_col_sm_9 {
+	width: 75%;
+}
+.bui_col_sm_10 {
+	width: 83.3333%;
+}
+.bui_col_sm_11 {
+	width: 91.6667%;
+}
+.bui_col_sm_12 {
+	width: 100%;
+}
+.bui_body_lg .bui_col_lg_1 {
+	width: 8.33333%;
+}
+.bui_body_lg .bui_col_lg_2 {
+	width: 16.6667%;
+}
+.bui_body_lg .bui_col_lg_2_4 {
+	width: 20%;
+}
+.bui_body_lg .bui_col_lg_3 {
+	width: 25%;
+}
+.bui_body_lg .bui_col_lg_4 {
+	width: 33.3333%;
+}
+.bui_body_lg .bui_col_lg_5 {
+	width: 41.6667%;
+}
+.bui_body_lg .bui_col_lg_6 {
+	width: 50%;
+}
+.bui_body_lg .bui_col_lg_7 {
+	width: 58.3333%;
+}
+.bui_body_lg .bui_col_lg_8 {
+	width: 66.6667%;
+}
+.bui_body_lg .bui_col_lg_9 {
+	width: 75%;
+}
+.bui_body_lg .bui_col_lg_10 {
+	width: 83.3333%;
+}
+.bui_body_lg .bui_col_lg_11 {
+	width: 91.6667%;
+}
+.bui_body_lg .bui_col_lg_12 {
+	width: 100%;
+}
+.bui_body_md .bui_col_md_1,
+.bui_body_lg .bui_col_md_1 {
+	width: 8.33333%;
+}
+.bui_body_md .bui_col_md_2,
+.bui_body_lg .bui_col_md_2 {
+	width: 16.6667%;
+}
+.bui_body_md .bui_col_md_2_4,
+.bui_body_lg .bui_col_md_2_4 {
+	width: 20%;
+}
+.bui_body_md .bui_col_md_3,
+.bui_body_lg .bui_col_md_3 {
+	width: 25%;
+}
+.bui_body_md .bui_col_md_4,
+.bui_body_lg .bui_col_md_4 {
+	width: 33.3333%;
+}
+.bui_body_md .bui_col_md_5,
+.bui_body_lg .bui_col_md_5 {
+	width: 41.6667%;
+}
+.bui_body_md .bui_col_md_6,
+.bui_body_lg .bui_col_md_6 {
+	width: 50%;
+}
+.bui_body_md .bui_col_md_7,
+.bui_body_lg .bui_col_md_7 {
+	width: 58.3333%;
+}
+.bui_body_md .bui_col_md_8,
+.bui_body_lg .bui_col_md_8 {
+	width: 66.6667%;
+}
+.bui_body_md .bui_col_md_9,
+.bui_body_lg .bui_col_md_9 {
+	width: 75%;
+}
+.bui_body_md .bui_col_md_10,
+.bui_body_lg .bui_col_md_10 {
+	width: 83.3333%;
+}
+.bui_body_md .bui_col_md_11,
+.bui_body_lg .bui_col_md_11 {
+	width: 91.6667%;
+}
+.bui_body_md .bui_col_md_12,
+.bui_body_lg .bui_col_md_12 {
+	width: 100%;
+}
+/*平均布局*/
+
+.bui_avg_lg_2 > *,
+.bui_avg_lg_3 > *,
+.bui_avg_lg_4 > *,
+.bui_avg_lg_5 > *,
+.bui_avg_lg_6 > *,
+.bui_avg_lg_7 > *,
+.bui_avg_lg_8 > *,
+.bui_avg_lg_9 > *,
+.bui_avg_lg_10 > *,
+.bui_avg_md_2 > *,
+.bui_avg_md_3 > *,
+.bui_avg_md_4 > *,
+.bui_avg_md_5 > *,
+.bui_avg_md_6 > *,
+.bui_avg_md_7 > *,
+.bui_avg_md_8 > *,
+.bui_avg_md_9 > *,
+.bui_avg_md_10 > *,
+.bui_avg_sm_2 > *,
+.bui_avg_sm_3 > *,
+.bui_avg_sm_4 > *,
+.bui_avg_sm_5 > *,
+.bui_avg_sm_6 > *,
+.bui_avg_sm_7 > *,
+.bui_avg_sm_8 > *,
+.bui_avg_sm_9 > *,
+.bui_avg_sm_10 > * {
+	width: 100%;
+	float: left;
+}
+.bui_avg_sm_2 > * {
+	width: 50%;
+}
+.bui_avg_sm_3 > * {
+	width: 33.3333333333333%;
+}
+.bui_avg_sm_4 > * {
+	width: 25%;
+}
+.bui_avg_sm_5 > * {
+	width: 20%;
+}
+.bui_avg_sm_6 > * {
+	width: 16.6666666666667%;
+}
+.bui_avg_sm_7 > * {
+	width: 14.2857142857143%;
+}
+.bui_avg_sm_8 > * {
+	width: 12.5%;
+}
+.bui_avg_sm_9 > * {
+	width: 11.1111111111111%;
+}
+.bui_avg_sm_10 > * {
+	width: 10%;
+}
+.bui_body_lg .bui_avg_lg_2 > * {
+	width: 50%;
+}
+.bui_body_lg .bui_avg_lg_3 > * {
+	width: 33.3333333333333%;
+}
+.bui_body_lg .bui_avg_lg_4 > * {
+	width: 25%;
+}
+.bui_body_lg .bui_avg_lg_5 > * {
+	width: 20%;
+}
+.bui_body_lg .bui_avg_lg_6 > * {
+	width: 16.6666666666667%;
+}
+.bui_body_lg .bui_avg_lg_7 > * {
+	width: 14.2857142857143%;
+}
+.bui_body_lg .bui_avg_lg_8 > * {
+	width: 12.5%;
+}
+.bui_body_lg .bui_avg_lg_9 > * {
+	width: 11.1111111111111%;
+}
+.bui_body_lg .bui_avg_lg_10 > * {
+	width: 10%;
+}
+.bui_body_lg .bui_avg_md_2 > *,
+.bui_body_md .bui_avg_md_2 > * {
+	width: 50%;
+}
+.bui_body_lg .bui_avg_md_3 > *,
+.bui_body_md .bui_avg_md_3 > * {
+	width: 33.3333333333333%;
+}
+.bui_body_lg .bui_avg_md_4 > *,
+.bui_body_md .bui_avg_md_4 > * {
+	width: 25%;
+}
+.bui_body_lg .bui_avg_md_5 > *,
+.bui_body_md .bui_avg_md_5 > * {
+	width: 20%;
+}
+.bui_body_lg .bui_avg_md_6 > *,
+.bui_body_md .bui_avg_md_6 > * {
+	width: 16.6666666666667%;
+}
+.bui_body_lg .bui_avg_md_7 > *,
+.bui_body_md .bui_avg_md_7 > * {
+	width: 14.2857142857143%;
+}
+.bui_body_lg .bui_avg_md_8 > *,
+.bui_body_md .bui_avg_md_8 > * {
+	width: 12.5%;
+}
+.bui_body_lg .bui_avg_md_9 > *,
+.bui_body_md .bui_avg_md_9 > * {
+	width: 11.1111111111111%;
+}
+.bui_body_lg .bui_avg_md_10 > *,
+.bui_body_md .bui_avg_md_10 > * {
+	width: 10%;
+}
+/*响应式隐藏显示*/
+
+.bui_body_sm .bui_hide_sm,
+.bui_body_lg .bui_show_sm,
+.bui_body_md .bui_show_sm {
+	display: none !important;
+}
+.bui_body_lg .bui_show_sm {
+	display: none !important;
+}
+.bui_body_lg .bui_hide_md {
+	display: block !important;
+}
+.bui_body_lg .bui_hide_sm {
+	display: block !important;
+}
+.bui_body_md .bui_show_sm {
+	display: none !important;
+}
+.bui_body_md .bui_hide_md {
+	display: none !important;
+}
+.bui_body_md .bui_hide_sm {
+	display: block !important;
+}
+.bui_body_sm .bui_show_sm {
+	display: block !important;
+}
+.bui_body_sm .bui_hide_md {
+	display: none !important;
+}
+.bui_body_sm .bui_hide_sm {
+	display: none !important;
+}
+/*版块*/
+
+.bui_body_lg section,
+.bui_body_lg .bui_section {
+	padding: 48px 0px;
+	padding: 4.8rem 0em;
+}
+.bui_body_md section,
+.bui_body_md .bui_section {
+	padding: 32px 0px;
+	padding: 3.2rem 0em;
+}
+.bui_body_sm section,
+.bui_body_sm .bui_section {
+	padding: 24px 0px;
+	padding: 2.4rem 0em;
+}
+/*图片处理*/
+
+[data-bui_img] [class*='bui_imgalt_'],
+.bui_mask_64 {
+	background-image: url(../images/bgc_black_o64.png);
+	background-repeat: repeat;
+}
